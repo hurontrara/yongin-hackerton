@@ -24,7 +24,7 @@ class GreetingController(val greetingService: GreetingService) {
     fun retrieveGreetingWithLog(@PathVariable("name") name: String) : String {
 
         logger.info { "Name is $name" }
-        logger.info { "$message" }
+        logger.info { message }
 
         return greetingService.retrieveGreeting(name)
 

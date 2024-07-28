@@ -56,7 +56,7 @@ class InstructorControllerUnitTest {
         every { instructorService.addInstructor(any()) } returns InstructorDTO(1, "name2")
 
         //when
-        val response = webTestClient
+        webTestClient
                 .post()
                 .uri("/v1/instructor")
                 .bodyValue(request)
