@@ -1,4 +1,4 @@
-package com.hackerton.server.practice.handler
+package com.hackerton.server.global.handler
 
 import com.hackerton.server.practice.exception.InstructorNotValidException
 import io.github.oshai.kotlinlogging.KotlinLogging

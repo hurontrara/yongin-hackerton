@@ -1,11 +1,12 @@
 package com.hackerton.server.practice.entity
 
+import com.hackerton.server.global.entity.BaseEntity
 import jakarta.persistence.*
 
 
 @Entity
 @Table(name = "INSTRUCTOR")
-data class Instructor (
+class Instructor (
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,4 +21,4 @@ data class Instructor (
         var courses : List<Course>? = null
 
 
-)
+) : BaseEntity()
